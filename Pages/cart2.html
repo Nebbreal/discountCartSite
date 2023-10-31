@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DiscountCart</title>
+        <link rel="icon" type="image/x-icon" href="../Images/shopping-cart-white.svg">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="../css/styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../js/main.js"></script> 
+    </head>
+
+
+    <body>
+        <div class="header">
+            <h1 class="page-title">DiscountCart</h1>
+
+            <div class="carts">
+                <a href="../index.html" class="normal">cart 1</a>
+                <p class="selected">cart 2</p>
+                <p class="normal">+</p>
+            </div>
+            <div class="hamburger-menu">
+                <button class="menu-button" id="openHamburgerMenuButton" onclick="openHamburgerMenu()">
+                    <img src="../Images\3-stripes.svg" alt="Menu" class="open-menu-button-img">
+                    <p id="openButtonText" class="menu-button-text">Open menu</p>
+                </button>
+                <div class="hidden-buttons">
+                    <button class="menu-button" id="settingsButton" onclick="">
+                        <img src="../Images\cog.svg" alt="Cog" class="settings-button-img">
+                        <p class="menu-button-text">Settings</p>
+                    </button>
+                    <button class="menu-button" id="compareButton" onclick="toCompare2()">
+                        <img src="../Images\scales-tipped-black.svg" alt="Scale" class="compare-button-img">
+                        <p class="menu-button-text">Compare</p>
+                    </button>
+                    <button class="menu-button" id="deleteAllButton" onclick="">
+                        <img src="../Images\trash-can-svg.svg" alt="Trashcan" class="trashAll-button-img">
+                        <p style="color: #E51B1B" class="menu-button-text">Delete all</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <label for="product-link"></label>
+        <input class = "addressBar" type="text" id="product-link" name="product-link" placeholder="Enter product link here...">
+        <div class="product-container">
+            <div class="product">
+                <div class="product-info">
+                    <img src="../Images/harry potter.jpg" alt="HarryPotterImg" class="product-img">
+                    <div class="product-text">
+                        <h1 title='Harry Potter 1 - Harry Potter en de steen der wijzen'>Harry Potter 1 - Harry Potter en de steen der...</h1>
+                        <p>Harry Potter is een doodgewone, maar ongelukkige jongen die sinds de dood van zijn ouders bij zijn saaie en hardvochtige oom en tante woont, in de bezemkast onder de trap. Op een dag...</p>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <p class="old-price">€22,90</p>
+                    <p class="new-price">€16,03</p>
+                    <p class="discount">30%</p>
+                </div>
+                <div class="product-footer">
+                    <button type="remove-button" class="remove-button">
+                        <img src="../Images/trash-can-svg.svg" alt="Remove" class="remove-button-img">
+                    </button>
+                    <button type="compare-button" class="compare-button" onclick="toCompare2()">
+                        <p class="compare-button-text">Compare</p>
+                        <img src="../Images/scales-tipped.svg" alt="Compare" class="compare-button-img">
+                    </button>
+                    <button type="buy-button" class="buy-button">
+                        <img src="../Images/shopping-cart-white.svg" alt ="Buy" class="buy-button-img">
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-info">
+                    <img src="../Images/zeven zussen storm.jpg" alt="ZevenZussenImg" class="product-img">
+                    <div class="product-text">
+                        <h1 title="De zeven zussen 2 - Storm">De zeven zussen 2 - Storm</h1>
+                        <p> In Storm, het tweede deel in de Zeven zussen-serie van Lucinda Riley, is de zeilvakantie van Ally D'Aplièse bijna ten einde als ze bericht krijgt over de plotselinge dood van haar vader. Zo snel als...</p>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <p class="old-price">€22,99</p>
+                    <p class="new-price">€18,39</p>
+                    <p class="discount">20%</p>
+                </div>
+                <div class="product-footer">
+                    <button type="remove-button" class="remove-button">
+                        <img src="../Images/trash-can-svg.svg" alt="Remove" class="remove-button-img">
+                    </button>
+                    <button type="compare-button" class="compare-button" onclick="toCompare2()">
+                        <p class="compare-button-text">Compare</p>
+                        <img src="../Images/scales-tipped.svg" alt="Compare" class="compare-button-img">
+                    </button>
+                    <button type="buy-button" class="buy-button">
+                        <img src="../Images/shopping-cart-white.svg" alt ="Buy" class="buy-button-img">
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-info">
+                    <img src="../Images/leeslamp.jpg" alt="LeesLampImg" class="product-img">
+                    <div class="product-text">
+                        <h1 title="Leeslamp Boek Bedlamp Leeslampje Voor In Bed Met Klem Oplaadbaar">Leeslamp Boek Bedlamp Leeslampje Voor In...</h1>
+                        <p>Wil je ’s avonds in bed een boek lezen of je laptop gebruiken? Dan heb je weinig zin om het grote licht aan te doen. Dit compacte, lichtgewicht leeslampje klem je makkelijk vast aan je boek...</p>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <p class="old-price">€19,95</p>
+                    <p class="new-price">€14,96</p>
+                    <p class="discount">14%</p>
+                </div>
+                <div class="product-footer">
+                    <button type="remove-button" class="remove-button">
+                        <img src="../Images/trash-can-svg.svg" alt="Remove" class="remove-button-img">
+                    </button>
+                    <button type="compare-button" class="compare-button" onclick="toCompare2()">
+                        <p class="compare-button-text">Compare</p>
+                        <img src="../Images/scales-tipped.svg" alt="Compare" class="compare-button-img">
+                    </button>
+                    <button type="buy-button" class="buy-button">
+                        <img src="../Images/shopping-cart-white.svg" alt ="Buy" class="buy-button-img">
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-info">
+                    <img src="../Images/boekenkast.jpg" alt="BoekenkastImg" class="product-img">
+                    <div class="product-text">
+                        <h1 title="Mazazu Boekenkast - Boekenrek - Industrieel - 6 Lagen - Hout/metaal - Bruin/Zwart - 66x30x186">Mazazu Boekenkast - Boekenrek...</h1>
+                        <p>STIJVOLLE COMBINATIE:
+                            Dit meubelstuk is een combinatie van eenvoudige vintage platen met een zwart ijzeren frame, waardige kleuren en eenvoudige vormen. Deze boekenkast past perfect...</p>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <p class="old-price">79,95</p>
+                    <p class="new-price">47,97</p>
+                    <p class="discount">40%</p>
+                </div>
+                <div class="product-footer">
+                    <button type="remove-button" class="remove-button">
+                        <img src="../Images/trash-can-svg.svg" alt="Remove" class="remove-button-img">
+                    </button>
+                    <button type="compare-button" class="compare-button" onclick="toCompare2()">
+                        <p class="compare-button-text">Compare</p>
+                        <img src="../Images/scales-tipped.svg" alt="Compare" class="compare-button-img">
+                    </button>
+                    <button type="buy-button" class="buy-button">
+                        <img src="../Images/shopping-cart-white.svg" alt ="Buy" class="buy-button-img">
+                    </button>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>

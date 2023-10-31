@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DiscountCart</title>
+        <link rel="icon" type="image/x-icon" href="Images/shopping-cart-white.svg">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/main.js"></script> 
+    </head>
+
+
+    <body>
+        <div class="header">
+            <h1 class="page-title">DiscountCart</h1>
+
+            <div class="carts">
+                <p class="selected">cart 1</p>
+                <a href="Pages/cart2.html" class="normal">cart 2</a>
+                <p class="normal">+</p>
+            </div>
+            <div class="hamburger-menu">
+                <button class="menu-button" id="openHamburgerMenuButton" onclick="openHamburgerMenu()">
+                    <img src="Images\3-stripes.svg" alt="Menu" class="open-menu-button-img">
+                    <p id="openButtonText" class="menu-button-text">Open menu</p>
+                </button>
+                <div class="hidden-buttons">
+                    <button class="menu-button" id="settingsButton" onclick="">
+                        <img src="Images\cog.svg" alt="Cog" class="settings-button-img">
+                        <p class="menu-button-text">Settings</p>
+                    </button>
+                    <button class="menu-button" id="compareButton" onclick="toCompare()">
+                        <img src="Images\scales-tipped-black.svg" alt="Scale" class="compare-button-img">
+                        <p class="menu-button-text">Compare</p>
+                    </button>
+                    <button class="menu-button" id="deleteAllButton" onclick="">
+                        <img src="Images\trash-can-svg.svg" alt="Trashcan" class="trashAll-button-img">
+                        <p style="color: #E51B1B" class="menu-button-text">Delete all</p>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        <br>
+        <label for="product-link"></label>
+        <input class = "addressBar" type="text" id="product-link" name="product-link" placeholder="Enter product link here...">
+        <div class="product-container">
+            <div class="product">
+                <div class="product-info">
+                    <img src="Images/laptop.JPG" alt="LaptopImg" class="product-img">
+                    <div class="product-text">
+                        <h1 title='Microsoft Surface Laptop 5 15" i7/8GB/256GB BLACK'>Microsoft Surface Laptop 5 15" i7/8GB...</h1>
+                        <p>De Microsoft Surface Laptop 5 15" i7/8GB/256GB BLACK is een krachtige 15 inch laptop met touchscreen, waarop je gemakkelijk multitaskt. Door de combinatie...</p>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <p class="old-price">€2079,99</p>
+                    <p class="new-price">€1559,25</p>
+                    <p class="discount">25%</p>
+                </div>
+                <div class="product-footer">
+                    <button type="remove-button" class="remove-button">
+                        <img src="Images/trash-can-svg.svg" alt="Remove" class="remove-button-img">
+                    </button>
+                    <button type="compare-button" class="compare-button" onclick="toCompare()">
+                        <p class="compare-button-text">Compare</p>
+                        <img src="Images/scales-tipped.svg" alt="Compare" class="compare-button-img">
+                    </button>
+                    <button type="buy-button" class="buy-button">
+                        <img src="Images/shopping-cart-white.svg" alt ="Buy" class="buy-button-img">
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-info">
+                    <img src="Images/muis.png" alt="LaptopImg" class="product-img">
+                    <div class="product-text">
+                        <h1 title="Logitech MX Master 3S Grafiet">Logitech MX Master 3S Grafiet</h1>
+                        <p>De Logitech MX Master 3S Grafiet is de verbeterde versie van de succesvolle MX Master 3. Deze muis is 90% stiller dan zijn voorganger. Hij beschikt net als de MX Master 3 over meerdere...</p>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <p class="old-price">€108,99</p>
+                    <p class="new-price">€98,09</p>
+                    <p class="discount">10%</p>
+                </div>
+                <div class="product-footer">
+                    <button type="remove-button" class="remove-button">
+                        <img src="Images/trash-can-svg.svg" alt="Remove" class="remove-button-img">
+                    </button>
+                    <button type="compare-button" class="compare-button" onclick="toCompare()">
+                        <p class="compare-button-text">Compare</p>
+                        <img src="Images/scales-tipped.svg" alt="Compare" class="compare-button-img">
+                    </button>
+                    <button type="buy-button" class="buy-button">
+                        <img src="Images/shopping-cart-white.svg" alt ="Buy" class="buy-button-img">
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-info">
+                    <img src="Images/oortjes.png" alt="LaptopImg" class="product-img">
+                    <div class="product-text">
+                        <h1 title="SONY LinkBuds S - Draadloze Oordopjes met Noise Cancelling - Zwart">SONY LinkBuds S - Draadloze Oordopjes...</h1>
+                        <p>Geluid klinkt beter met de Sony LinkBuds S Zwart. Deze zeer compacte bluetoothoordopjes met noisecancelling bieden hoogwaardig geluid en zijn gemaakt met gerecycled plastic...</p>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <p class="old-price">€150,99</p>
+                    <p class="new-price">€129,00</p>
+                    <p class="discount">14%</p>
+                </div>
+                <div class="product-footer">
+                    <button type="remove-button" class="remove-button">
+                        <img src="Images/trash-can-svg.svg" alt="Remove" class="remove-button-img">
+                    </button>
+                    <button type="compare-button" class="compare-button" onclick="toCompare()">
+                        <p class="compare-button-text">Compare</p>
+                        <img src="Images/scales-tipped.svg" alt="Compare" class="compare-button-img">
+                    </button>
+                    <button type="buy-button" class="buy-button">
+                        <img src="Images/shopping-cart-white.svg" alt ="Buy" class="buy-button-img">
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-info">
+                    <img src="Images/book2.png" alt="LaptopImg" class="product-img">
+                    <div class="product-text">
+                        <h1 title="SAMSUNG GALAXY BOOK2 - 15.6 inch - Intel Core i7 - 16 GB - 512 GB">SAMSUNG GALAXY BOOK2 - 15.6 inch....</h1>
+                        <p>Wil jij toetsen of de Samsung Galaxy Book2 16 GB/512 GB Grijs jouw laptop wordt? Lees dan snel verder of deze slanke en veelzijdige 15.6-inch-laptop met een uitbreidbare SSD...</p>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <p class="old-price">€979,00</p>
+                    <p class="new-price">€783,20</p>
+                    <p class="discount">20%</p>
+                </div>
+                <div class="product-footer">
+                    <button type="remove-button" class="remove-button">
+                        <img src="Images/trash-can-svg.svg" alt="Remove" class="remove-button-img">
+                    </button>
+                    <button type="compare-button" class="compare-button" onclick="toCompare()">
+                        <p class="compare-button-text">Compare</p>
+                        <img src="Images/scales-tipped.svg" alt="Compare" class="compare-button-img">
+                    </button>
+                    <button type="buy-button" class="buy-button">
+                        <img src="Images/shopping-cart-white.svg" alt ="Buy" class="buy-button-img">
+                    </button>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>
